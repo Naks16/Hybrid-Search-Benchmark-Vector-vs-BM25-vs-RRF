@@ -1,0 +1,3 @@
+Passing a negative value for n_estimators raises a ValueError. The error message
+says that the number of trees must be a positive integer. A TypeError is raised
+instead when n_estimators is a string.

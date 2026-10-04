@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Secrets (ANTHROPIC_API_KEY, MODEL_NAME)
+.env
+
+# Generated index: rebuild with `python -m search.index`
+data/index/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

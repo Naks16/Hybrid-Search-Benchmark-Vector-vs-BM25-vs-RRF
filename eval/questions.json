@@ -1,0 +1,282 @@
+[
+  {
+    "id": "q01",
+    "question": "What is the DFG project number that funded the paper on pricing American options under stochastic correlation?",
+    "type": "exact_term",
+    "gold_chunk_ids": ["paper1.pdf::66"],
+    "evidence": "The work was funded by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation)- Project No. [581639701]."
+  },
+  {
+    "id": "q02",
+    "question": "What XGBoost maximum tree depth, learning rate and number of trees are used in the American option numerical experiments?",
+    "type": "exact_term",
+    "gold_chunk_ids": ["paper1.pdf::44"],
+    "evidence": "the maximum tree depth is set to ed= 2; the learning rate toη= 0.9 (with a low tree depth and a large learning rate chosen to expedite computation when possible), datasets of sizeMare split into training and test sets with a ration of 3 : 1,the number of trees is set to be 150"
+  },
+  {
+    "id": "q03",
+    "question": "What does the abbreviation DPDB stand for in the benchmark comparison?",
+    "type": "exact_term",
+    "gold_chunk_ids": ["paper1.pdf::50", "paper1.pdf::51"],
+    "evidence": "the deep primal-dual BSDE (DPDB) algorithm"
+  },
+  {
+    "id": "q04",
+    "question": "In the Table 3 SABSR experiment, how long does the RBSDE scheme run compared with the DPDB training time?",
+    "type": "exact_term",
+    "gold_chunk_ids": ["paper1.pdf::51", "paper1.pdf::55"],
+    "evidence": "The average running time of our scheme is approximately 210 seconds for the given parameter setting, and the training time of DPDB scheme is about 637 seconds."
+  },
+  {
+    "id": "q05",
+    "question": "What convergence rate for the Y error do Bouchard and Chassagneux (2008) establish under assumption (H1)?",
+    "type": "exact_term",
+    "gold_chunk_ids": ["paper1.pdf::24"],
+    "evidence": "=O(∆t 1 2 ) (37) under assumption (H1):g∈C 1 b withL-Lipschitz derivatives"
+  },
+  {
+    "id": "q06",
+    "question": "In RED-ARB, which single DEX venue supplies the largest share of winning quotes, and how large is that share?",
+    "type": "exact_term",
+    "gold_chunk_ids": ["paper2.pdf::13"],
+    "evidence": "a single venue, Whirlpool, supplies 42 percent"
+  },
+  {
+    "id": "q07",
+    "question": "What is the Zenodo DOI of the RED-BRIDGE dataset?",
+    "type": "exact_term",
+    "gold_chunk_ids": ["paper2.pdf::9", "paper2.pdf::23"],
+    "evidence": "RED-BRIDGE: 10.5281/zenodo.21211498"
+  },
+  {
+    "id": "q08",
+    "question": "Which field names in RED-ORACLE store the oracle publish lag and the signed drift from the centralized price?",
+    "type": "exact_term",
+    "gold_chunk_ids": ["paper2.pdf::10"],
+    "evidence": "records the oracle’s publish lag ( lag_sec , the diﬀerence between the sample time and the Pyth publish time) and its signed drift from the centralized price ( drift_bps )"
+  },
+  {
+    "id": "q09",
+    "question": "In RED-LIQ, what is the correlation between Arbitrum and Polygon lending utilization?",
+    "type": "exact_term",
+    "gold_chunk_ids": ["paper2.pdf::15"],
+    "evidence": "Arbitrum utilization moves counter to both Ethereum (correlation approximately minus 0.19) and Polygon (correlation approximately minus 0.31)"
+  },
+  {
+    "id": "q10",
+    "question": "What JEL and MSC 2020 classification codes are listed for the admissible portfolio optimization paper?",
+    "type": "exact_term",
+    "gold_chunk_ids": ["paper3.pdf::1"],
+    "evidence": "JEL:C44, C58, G11.MSC 2020:91G10, 62C05, 90C29."
+  },
+  {
+    "id": "q11",
+    "question": "In Table 5, what are the defect before and after conditioning, and the reduction, for the 25 size/momentum (Europe) universe?",
+    "type": "exact_term",
+    "gold_chunk_ids": ["paper3.pdf::60"],
+    "evidence": "25 size/momentum (Europe) 25 81 0.29 0.96 0.81 15% 0%"
+  },
+  {
+    "id": "q12",
+    "question": "Which hmmlearn covariance_type and n_iter settings does the ARC-AGENT regime detector use?",
+    "type": "exact_term",
+    "gold_chunk_ids": ["paper4.pdf::61"],
+    "evidence": "A Gaussian HMM ( hmmlearn) with K states on z-scored features, covariance_type=\"diag\", n_iter= 200 , tol= 10−4"
+  },
+  {
+    "id": "q13",
+    "question": "What did preregistration amendment PR1 change?",
+    "type": "exact_term",
+    "gold_chunk_ids": ["paper4.pdf::77"],
+    "evidence": "One amendment (PR1) was recorded after freezing and before any hypothesis outcome was inspected: the range of λµ was widened from [0,2] to [0,30] ."
+  },
+  {
+    "id": "q14",
+    "question": "How many parameters does the mixture-of-experts denoiser have in total, and how many remain in the −MoE ablation?",
+    "type": "exact_term",
+    "gold_chunk_ids": ["paper4.pdf::53", "paper4.pdf::55"],
+    "evidence": "Exact parameter counts are 23,690 per expert and 161 for the gate, 47,541 in total; the−MoE ablation drops the crisis expert, leaving 23,851."
+  },
+  {
+    "id": "q15",
+    "question": "What values of diff_epochs and retrain_every are used by every measured arm?",
+    "type": "exact_term",
+    "gold_chunk_ids": ["paper4.pdf::55", "paper4.pdf::56"],
+    "evidence": "(diff_epochs=12,retrain_every=1000)"
+  },
+  {
+    "id": "q16",
+    "question": "What goes wrong when a model built to match today's quoted contract prices exactly is relied on to protect positions in unusual, non-standard contracts over time?",
+    "type": "paraphrase",
+    "gold_chunk_ids": ["paper1.pdf::0"],
+    "evidence": "it has been pointed out in Hagen et al. (2002) that these self-consistent and arbitrage-free models predict the wrong dynamics of the implied volatility curve, leading to unstable hedges of exotic options."
+  },
+  {
+    "id": "q17",
+    "question": "When do series-style shortcut formulas become unreliable, for example for contracts that expire far in the future or whose strike sits far from the current asset level?",
+    "type": "paraphrase",
+    "gold_chunk_ids": ["paper1.pdf::1"],
+    "evidence": "it is well known that the expansion of implied volatility in Hagen et al. (2002) is less accurate for a large maturity, or when the options are deep in or out of the money."
+  },
+  {
+    "id": "q18",
+    "question": "Why is it dangerous to assume that the way two market quantities move together stays fixed over time?",
+    "type": "paraphrase",
+    "gold_chunk_ids": ["paper1.pdf::2"],
+    "evidence": "Clearly, assuming constant correlations may lead to misestimation and introduce correlation risk."
+  },
+  {
+    "id": "q19",
+    "question": "Why does a state-grid technique that already copes with two random drivers become impractically heavy once a third randomly varying quantity has to be tracked?",
+    "type": "paraphrase",
+    "gold_chunk_ids": ["paper1.pdf::2", "paper1.pdf::3"],
+    "evidence": "the commonly used double-layer CTMC approximation would need to be extended to a triple-layer structure to accommodate the stochastic correlation, which poses significant computational challenges."
+  },
+  {
+    "id": "q20",
+    "question": "Why do the authors only report sensitivity to the underlying asset, and not sensitivity to how jumpy the market is or how strongly things move together?",
+    "type": "paraphrase",
+    "gold_chunk_ids": ["paper1.pdf::45", "paper1.pdf::46", "paper1.pdf::66"],
+    "evidence": "obtaining sufficiently precise approximations for other hedgings, such as ∂V ∂ν and ∂V ∂ρ,poses challenges due to ill-conditioned systems of equations"
+  },
+  {
+    "id": "q21",
+    "question": "When the short-run link between the premium of never-expiring futures over the cash price and the periodic payments exchanged between their long and short holders falls apart, how much better can one foresee a change in those payments?",
+    "type": "paraphrase",
+    "gold_chunk_ids": ["paper2.pdf::16"],
+    "evidence": "Breaks raise the four-hour shift probability by only 2.9 to 4.5 percentage points over a base rate that is already near 91 percent"
+  },
+  {
+    "id": "q22",
+    "question": "Why is it actually useful that one of the collections showed no pattern at all?",
+    "type": "paraphrase",
+    "gold_chunk_ids": ["paper2.pdf::20"],
+    "evidence": "If we had found structure in all ﬁve layers, a skeptical reader could reasonably suspect that the structure is an artifact of how we measure, a property of the observer rather than the market."
+  },
+  {
+    "id": "q23",
+    "question": "Are the money movements between networks in the sample typically small amounts sent by individuals, or large institutional sums?",
+    "type": "paraphrase",
+    "gold_chunk_ids": ["paper2.pdf::17", "paper2.pdf::18"],
+    "evidence": "the median transfer is only 200 dollars"
+  },
+  {
+    "id": "q24",
+    "question": "Could someone use the released records to find out who the individual people behind them are?",
+    "type": "paraphrase",
+    "gold_chunk_ids": ["paper2.pdf::8"],
+    "evidence": "Transaction hashes and on-chain addresses that appear in the datasets are public identiﬁers and are not personally identiﬁable information"
+  },
+  {
+    "id": "q25",
+    "question": "If an investor bans betting against stocks, does that cure the model's tendency to understate how volatile the holdings will be?",
+    "type": "paraphrase",
+    "gold_chunk_ids": ["paper3.pdf::64"],
+    "evidence": "the constraint improves the allocation and leaves the reported risk as wrong as it was."
+  },
+  {
+    "id": "q26",
+    "question": "Splitting money evenly across all holdings comes out on top for reward relative to risk. Is that a fair win, and where does the edge come from?",
+    "type": "paraphrase",
+    "gold_chunk_ids": ["paper3.pdf::63"],
+    "evidence": "the advantage of equal weights is an annualised mean higher by 4.8 percentage points, which is not significant at the five per cent level, against a volatility higher by 3.0 points"
+  },
+  {
+    "id": "q27",
+    "question": "Would it be acceptable to feed tomorrow's actual outcomes into today's allocation decision, and what would that do for an investor who had them?",
+    "type": "paraphrase",
+    "gold_chunk_ids": ["paper3.pdf::17"],
+    "evidence": "A realized horizon return fails (i) on the calendar and (ii) in the extreme form in which the informed agent’s utility is unbounded."
+  },
+  {
+    "id": "q28",
+    "question": "Roughly how many possible explanatory signals would single stocks need before they pass the independence check, and why can bundled groups of stocks never get there?",
+    "type": "paraphrase",
+    "gold_chunk_ids": ["paper3.pdf::62", "paper3.pdf::63"],
+    "evidence": "extrapolating the loglinear trend, of the order of three hundred candidates of the same kind would reach the tolerance"
+  },
+  {
+    "id": "q29",
+    "question": "Why can comparing one observed outcome against a forecast of the average loss on the worst days never prove that forecast is accurate?",
+    "type": "paraphrase",
+    "gold_chunk_ids": ["paper4.pdf::12", "paper4.pdf::56"],
+    "evidence": "CVaRα is not elicitable: no scoring function has CVaRα as its unique minimiser"
+  },
+  {
+    "id": "q30",
+    "question": "Why does the simulated market need a few safe holdings, and why must those earn less than the others?",
+    "type": "paraphrase",
+    "gold_chunk_ids": ["paper4.pdf::54", "paper4.pdf::55"],
+    "evidence": "without a defensive corner the allocator is always fully invested in statistically identical assets, equal weight is optimal by construction, and regime-conditioning has nothing to earn"
+  },
+  {
+    "id": "q31",
+    "question": "Why do they use early stopping instead of a fixed number of trees in XGBoost?",
+    "type": "mixed",
+    "gold_chunk_ids": ["paper1.pdf::44"],
+    "evidence": "In contrast to this methodology, we employ “Early Stopping” to automatically determine the specific number of trees at each time step."
+  },
+  {
+    "id": "q32",
+    "question": "Is the price gap between Solana DEXs and OKX mostly caused by price impact from trade size?",
+    "type": "mixed",
+    "gold_chunk_ids": ["paper2.pdf::13"],
+    "evidence": "which indicates that the spread, rather than slippage, is the dominant component of the observed gap"
+  },
+  {
+    "id": "q33",
+    "question": "Can these DeFi datasets be used to study seasonal effects?",
+    "type": "mixed",
+    "gold_chunk_ids": ["paper2.pdf::22"],
+    "evidence": "all cover a single continuous 2026 window of approximately 57 days, so seasonality and regime dependence are untested"
+  },
+  {
+    "id": "q34",
+    "question": "How long was the worst delay in Pyth oracle price updates during the collection window?",
+    "type": "mixed",
+    "gold_chunk_ids": ["paper2.pdf::11", "paper2.pdf::12"],
+    "evidence": "Over the window we observe 21 episodes with a lag above 60 seconds, the longest reaching 213 seconds"
+  },
+  {
+    "id": "q35",
+    "question": "What mistakes about the input information make a portfolio backtest look better than it really is?",
+    "type": "mixed",
+    "gold_chunk_ids": ["paper3.pdf::0", "paper3.pdf::1"],
+    "evidence": "Two errors about this input, using variables that were not legitimately available when the decision was taken and treating common variation across assets as if it were idiosyncratic, cause a backtest to overstate what a portfolio can deliver"
+  },
+  {
+    "id": "q36",
+    "question": "How quickly does the regret of the estimated portfolio shrink as the sample size grows?",
+    "type": "mixed",
+    "gold_chunk_ids": ["paper3.pdf::52"],
+    "evidence": "Table 3 shows it decaying asN−1, the rate of Proposition 3.25, from 0.035 atN= 250 to 0.0008 atN= 8,000"
+  },
+  {
+    "id": "q37",
+    "question": "Why aren't portfolio results reported for the hedge-fund panel?",
+    "type": "mixed",
+    "gold_chunk_ids": ["paper3.pdf::58", "paper3.pdf::59"],
+    "evidence": "with seventeen series and a thirty-month estimation block the sample covariance is not identified, so no portfolio comparison is reported on it"
+  },
+  {
+    "id": "q38",
+    "question": "Were the historical market universes actually used in the agent experiments?",
+    "type": "mixed",
+    "gold_chunk_ids": ["paper4.pdf::67"],
+    "evidence": "We did not execute U1 or U2 in this study"
+  },
+  {
+    "id": "q39",
+    "question": "What does the rule-based controller do when the probability of a crisis is high?",
+    "type": "mixed",
+    "gold_chunk_ids": ["paper4.pdf::61"],
+    "evidence": "above 0.35 it setsη=3.0,α=0.99,γ=1.5,q=0.10 andλµ=4 (risk-off)"
+  },
+  {
+    "id": "q40",
+    "question": "What happens when the runtime gate rejects the generated scenarios?",
+    "type": "mixed",
+    "gold_chunk_ids": ["paper4.pdf::6"],
+    "evidence": "a rejected set is regenerated up toB=3 times, then replaced by a block-bootstrap fallback"
+  }
+]
