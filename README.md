@@ -6,20 +6,20 @@ A Python retrieval system that searches a collection of research papers (PDF, Ma
 
 ```mermaid
 flowchart LR
-    A[data/docs<br/>PDF / MD / TXT] --> B[Load & clean text<br/>fix PDF line-break hyphens]
-    B --> C[Chunk<br/>400 tokens, 50 overlap<br/>id = file::index]
-    C --> D[Embed chunks<br/>bge-small-en-v1.5<br/>cached .npy]
-    C --> E[BM25 index<br/>identifier-aware tokenizer]
-    Q[Query] --> V[Vector search<br/>cosine top-k]
-    Q --> K[BM25 search<br/>keyword top-k]
+    A["data/docs<br/>PDF / MD / TXT"] --> B["Load and clean text<br/>fix PDF line-break hyphens"]
+    B --> C["Chunk<br/>400 tokens, 50 overlap<br/>id = file::index"]
+    C --> D["Embed chunks<br/>bge-small-en-v1.5<br/>cached .npy"]
+    C --> E["BM25 index<br/>identifier-aware tokenizer"]
+    Q["Query"] --> V["Vector search<br/>cosine top-k"]
+    Q --> K["BM25 search<br/>keyword top-k"]
     D --> V
     E --> K
-    V --> F[Reciprocal Rank Fusion<br/>top 20 from each, k=60]
+    V --> F["Reciprocal Rank Fusion<br/>top 20 from each, k=60"]
     K --> F
-    V --> R[Ranked chunks<br/>id, source, score, text]
+    V --> R["Ranked chunks<br/>id, source, score, text"]
     K --> R
     F --> R
-    R --> EV[Evaluation<br/>hit@k, MRR, latency,<br/>per-type + sweeps]
+    R --> EV["Evaluation<br/>hit rate, MRR, latency<br/>per question type + sweeps"]
 ```
 
 ## How to run
